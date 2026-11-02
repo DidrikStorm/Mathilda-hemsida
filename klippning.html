@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klippning - Modig Hårdesign</title>
+    <meta name="description" content="Professionell klippning för dam och herr i Göteborg. Erfarna frisörer som lyssnar på dina önskemål.">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Archivo:wght@400;500&family=Archivo+Narrow:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="hallmark.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container nav__inner">
+            <a href="index.html" class="nav__wordmark">MODIG HÅRDESIGN</a>
+            <a href="boka.html" class="btn btn--primary">Boka tid</a>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero hero--service">
+        <div class="container">
+            <div class="hero__header">
+                <h1>KLIPPNING</h1>
+                <p class="lead">Professionell klippning för dam och herr</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Content -->
+    <section class="section">
+        <div class="container">
+            <div class="service-split">
+                <div class="service-split__text">
+                    <h2>SKRÄDDARSYDD EFTER DINA ÖNSKEMÅL</h2>
+                    <p>Hos Modig Hårdesign får du en professionell klippning anpassad efter dina önskemål och ditt hårs förutsättningar. Vi lyssnar på vad du vill ha och ger expertråd för att hitta den frisyr som passar dig bäst.</p>
+                    <p>Vi tar hänsyn till din ansiktsform, hårstruktur och livsstil för att skapa en frisyr som är både snygg och lätt att underhålla.</p>
+                    
+                    <h3>VAD INGÅR</h3>
+                    <ul class="service-list">
+                        <li>Konsultation och råd från erfaren frisör</li>
+                        <li>Schamponering med kvalitetsprodukter</li>
+                        <li>Professionell klippning</li>
+                        <li>Styling och finish</li>
+                        <li>Tips för hemvård</li>
+                    </ul>
+                </div>
+                <div class="service-split__visual">
+                    <div class="photo" data-slot="klippning-main">
+                        <img src="images/229.jpg" alt="Klippning hos Modig Hårdesign">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Action Band -->
+    <section class="band">
+        <div class="container band__inner">
+            <div class="action-block">
+                <h3>RES DIG FÖR NY KLIPPNING</h3>
+                <a href="boka.html" class="btn btn--primary">Boka tid</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Services -->
+    <section class="section">
+        <div class="container">
+            <h2>ANDRA BEHANDLINGAR</h2>
+            <div class="grid grid--three">
+                <article class="card">
+                    <div class="card__visual" data-slot="related-fargning">
+                        <img src="images/229.jpg" alt="Färgning">
+                    </div>
+                    <div class="card__content">
+                        <h3>FÄRGNING</h3>
+                        <p>Från naturliga toner till kreativa färger med Redken produkter.</p>
+                        <a href="fargning.html" class="link">Läs mer</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card__visual" data-slot="related-slingor">
+                        <img src="images/229.jpg" alt="Slingor">
+                    </div>
+                    <div class="card__content">
+                        <h3>SLINGOR</h3>
+                        <p>Klassiska folieslingor eller moderna balayage tekniker.</p>
+                        <a href="slingor.html" class="link">Läs mer</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card__visual" data-slot="related-brollop">
+                        <img src="images/229.jpg" alt="Bröllop">
+                    </div>
+                    <div class="card__content">
+                        <h3>BRÖLLOP</h3>
+                        <p>Professionell bruduppsättning för din speciella dag.</p>
+                        <a href="brollop.html" class="link">Läs mer</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div class="footer__mast">
+                <div class="footer__wordmark">MODIG HÅRDESIGN</div>
+                <nav class="footer__nav">
+                    <a href="klippning.html">Klippning</a>
+                    <a href="fargning.html">Färgning</a>
+                    <a href="slingor.html">Slingor</a>
+                    <a href="brollop.html">Bröllop</a>
+                </nav>
+            </div>
+            <div class="footer__legal">
+                <p>Götabergsgatan 18, Göteborg</p>
+                <p>031-18 86 86</p>
+                <p>info@modig-hardesign.nu</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>window.hallmarkSlots = (m) => { for (const [k, v] of Object.entries(m)) { const s = document.querySelector(`[data-slot="${k}"]`); if (!s) continue; const im = new Image(); im.src = typeof v === 'string' ? v : v.src; im.alt = (typeof v === 'object' && v.alt) || s.dataset.alt || ''; s.querySelectorAll(':scope > img').forEach((o) => o.remove()); s.prepend(im); } };
+document.querySelectorAll('[data-slot] img').forEach((i) => { if (i.complete && !i.naturalWidth) i.remove(); else i.addEventListener('error', () => i.remove(), { once: true }); });</script>
+</body>
+</html>

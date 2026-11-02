@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Färgning - Modig Hårdesign</title>
+    <meta name="description" content="Kreativ och professionell hårfärgning i Göteborg. Från naturliga toner till djärva färger med Redken produkter.">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Archivo:wght@400;500&family=Archivo+Narrow:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="hallmark.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container nav__inner">
+            <a href="index.html" class="nav__wordmark">MODIG HÅRDESIGN</a>
+            <a href="boka.html" class="btn btn--primary">Boka tid</a>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero hero--service">
+        <div class="container">
+            <div class="hero__header">
+                <h1>FÄRGNING</h1>
+                <p class="lead">Kreativ och professionell hårfärgning</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Content -->
+    <section class="section">
+        <div class="container">
+            <div class="service-split">
+                <div class="service-split__text">
+                    <h2>FRÅN NATURLIGT TILL KREATIVT</h2>
+                    <p>Med vår expertis inom hårfärgning kan vi skapa allt från naturliga, subtila toner till djärva och kreativa färger. Vi använder kvalitetsprodukter från Redken som ger långvarigt, vackert resultat samtidigt som de vårdar ditt hår.</p>
+                    <p>Vi gör alltid en noggrann konsultation där vi diskuterar dina önskemål, analyserar ditt hårs kondition och ger professionella råd om vilken färg som passar dig bäst.</p>
+                    
+                    <h3>VÅRA FÄRGNINGSTJÄNSTER</h3>
+                    <ul class="service-list">
+                        <li>Helfärgning — naturliga eller kreativa färger</li>
+                        <li>Bottenfärgning — fräscha upp utväxten</li>
+                        <li>Toning — justera eller neutralisera toner</li>
+                        <li>Färgkorrigering — rätta till ofrivilliga resultat</li>
+                        <li>Kreativ färgsättning — unika kombinationer</li>
+                    </ul>
+
+                    <h3>KVALITETSPRODUKTER FRÅN REDKEN</h3>
+                    <p>Vi arbetar med högkvalitativa produkter från Redken som är kända för sitt professionella resultat och skonsamma formula. Våra erfarna frisörer har gedigen kunskap om färgteori och hårvård.</p>
+                </div>
+                <div class="service-split__visual">
+                    <div class="photo" data-slot="fargning-main">
+                        <img src="images/229.jpg" alt="Färgning hos Modig Hårdesign">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Action Band -->
+    <section class="band">
+        <div class="container band__inner">
+            <div class="action-block">
+                <h3>BOKA DIN FÄRGNING</h3>
+                <a href="boka.html" class="btn btn--primary">Boka tid</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Services -->
+    <section class="section">
+        <div class="container">
+            <h2>ANDRA BEHANDLINGAR</h2>
+            <div class="grid grid--three">
+                <article class="card">
+                    <div class="card__visual" data-slot="related-klippning">
+                        <img src="images/229.jpg" alt="Klippning">
+                    </div>
+                    <div class="card__content">
+                        <h3>KLIPPNING</h3>
+                        <p>Professionell klippning för dam och herr.</p>
+                        <a href="klippning.html" class="link">Läs mer</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card__visual" data-slot="related-slingor">
+                        <img src="images/229.jpg" alt="Slingor">
+                    </div>
+                    <div class="card__content">
+                        <h3>SLINGOR</h3>
+                        <p>Klassiska folieslingor eller moderna balayage tekniker.</p>
+                        <a href="slingor.html" class="link">Läs mer</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card__visual" data-slot="related-brollop">
+                        <img src="images/229.jpg" alt="Bröllop">
+                    </div>
+                    <div class="card__content">
+                        <h3>BRÖLLOP</h3>
+                        <p>Professionell bruduppsättning för din speciella dag.</p>
+                        <a href="brollop.html" class="link">Läs mer</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div class="footer__mast">
+                <div class="footer__wordmark">MODIG HÅRDESIGN</div>
+                <nav class="footer__nav">
+                    <a href="klippning.html">Klippning</a>
+                    <a href="fargning.html">Färgning</a>
+                    <a href="slingor.html">Slingor</a>
+                    <a href="brollop.html">Bröllop</a>
+                </nav>
+            </div>
+            <div class="footer__legal">
+                <p>Götabergsgatan 18, Göteborg</p>
+                <p>031-18 86 86</p>
+                <p>info@modig-hardesign.nu</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>window.hallmarkSlots = (m) => { for (const [k, v] of Object.entries(m)) { const s = document.querySelector(`[data-slot="${k}"]`); if (!s) continue; const im = new Image(); im.src = typeof v === 'string' ? v : v.src; im.alt = (typeof v === 'object' && v.alt) || s.dataset.alt || ''; s.querySelectorAll(':scope > img').forEach((o) => o.remove()); s.prepend(im); } };
+document.querySelectorAll('[data-slot] img').forEach((i) => { if (i.complete && !i.naturalWidth) i.remove(); else i.addEventListener('error', () => i.remove(), { once: true }); });</script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bröllop - Modig Hårdesign</title>
+    <meta name="description" content="Bruduppsättning och festfrisyrer i Göteborg. Professionell styling för din speciella dag.">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Archivo:wght@400;500&family=Archivo+Narrow:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="hallmark.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container nav__inner">
+            <a href="index.html" class="nav__wordmark">MODIG HÅRDESIGN</a>
+            <a href="boka.html" class="btn btn--primary">Boka tid</a>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero hero--service">
+        <div class="container">
+            <div class="hero__header">
+                <h1>BRÖLLOP</h1>
+                <p class="lead">Bruduppsättning och festfrisyrer</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Content -->
+    <section class="section">
+        <div class="container">
+            <div class="service-split">
+                <div class="service-split__text">
+                    <h2>DIN SPECIELLA DAG</h2>
+                    <p>Din bröllopsdag ska vara perfekt i varje detalj, och vi ser till att din frisyr blir precis som du drömt om. Vi skapar vackra bruduppsättningar och festfrisyrer som håller hela dagen och får dig att känna dig extra vacker.</p>
+                    <p>Oavsett om du vill ha en klassisk uppsättning, romantiska lockar eller en modern och stilren look, arbetar vi tillsammans med dig för att hitta den frisyr som passar din klänning, din stil och dina önskemål.</p>
+                    
+                    <h3>VÅR BRÖLLOPSTJÄNST</h3>
+                    <ul class="service-list">
+                        <li>Provfrisyr — rekommenderas före bröllopsdagen</li>
+                        <li>Bruduppsättning — professionell styling</li>
+                        <li>Bröllopsfölje — frisyrer för brudtärnor och gäster</li>
+                        <li>Flexibel tid — anpassad efter din tidsplan</li>
+                        <li>Hembesök — kontakta oss för möjligheter</li>
+                    </ul>
+
+                    <h3>PLANERA DIN BRÖLLOPSFRISYR</h3>
+                    <p>Vi rekommenderar att du bokar din provfrisyr minst en månad innan bröllopet. Ta gärna med bilder som inspiration och berätta om din vision. Om du ska ha slöja, hårsmycken eller blommor, ta med dessa till provfrisyren så att vi kan planera den perfekta looken.</p>
+                    <p>För bröllopsdagen reserverar vi god tid så att allt blir lugnt och avslappnat. Du är välkommen att ta med brudfölje så att alla kan göras samtidigt.</p>
+                </div>
+                <div class="service-split__visual">
+                    <div class="photo" data-slot="brollop-main">
+                        <img src="images/229.jpg" alt="Bröllop hos Modig Hårdesign">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Action Band -->
+    <section class="band">
+        <div class="container band__inner">
+            <div class="action-block">
+                <h3>BOKA BRÖLLOPSKONSULTATION</h3>
+                <a href="boka.html" class="btn btn--primary">Boka tid</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Services -->
+    <section class="section">
+        <div class="container">
+            <h2>ANDRA BEHANDLINGAR</h2>
+            <div class="grid grid--three">
+                <article class="card">
+                    <div class="card__visual" data-slot="related-klippning">
+                        <img src="images/229.jpg" alt="Klippning">
+                    </div>
+                    <div class="card__content">
+                        <h3>KLIPPNING</h3>
+                        <p>Professionell klippning för dam och herr.</p>
+                        <a href="klippning.html" class="link">Läs mer</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card__visual" data-slot="related-fargning">
+                        <img src="images/229.jpg" alt="Färgning">
+                    </div>
+                    <div class="card__content">
+                        <h3>FÄRGNING</h3>
+                        <p>Från naturliga toner till kreativa färger med Redken produkter.</p>
+                        <a href="fargning.html" class="link">Läs mer</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card__visual" data-slot="related-slingor">
+                        <img src="images/229.jpg" alt="Slingor">
+                    </div>
+                    <div class="card__content">
+                        <h3>SLINGOR</h3>
+                        <p>Klassiska folieslingor eller moderna balayage tekniker.</p>
+                        <a href="slingor.html" class="link">Läs mer</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div class="footer__mast">
+                <div class="footer__wordmark">MODIG HÅRDESIGN</div>
+                <nav class="footer__nav">
+                    <a href="klippning.html">Klippning</a>
+                    <a href="fargning.html">Färgning</a>
+                    <a href="slingor.html">Slingor</a>
+                    <a href="brollop.html">Bröllop</a>
+                </nav>
+            </div>
+            <div class="footer__legal">
+                <p>Götabergsgatan 18, Göteborg</p>
+                <p>031-18 86 86</p>
+                <p>info@modig-hardesign.nu</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>window.hallmarkSlots = (m) => { for (const [k, v] of Object.entries(m)) { const s = document.querySelector(`[data-slot="${k}"]`); if (!s) continue; const im = new Image(); im.src = typeof v === 'string' ? v : v.src; im.alt = (typeof v === 'object' && v.alt) || s.dataset.alt || ''; s.querySelectorAll(':scope > img').forEach((o) => o.remove()); s.prepend(im); } };
+document.querySelectorAll('[data-slot] img').forEach((i) => { if (i.complete && !i.naturalWidth) i.remove(); else i.addEventListener('error', () => i.remove(), { once: true }); });</script>
+</body>
+</html>
